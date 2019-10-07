@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetTomato"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:textColor="#000000">
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="토마토 정보입력"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:background="#008f69"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:textSize="20dp"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="키우기 시작한 날?"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/day"
+            android:hint="날짜를 입력하세요."
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름은 무엇인가요?"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/name"
+            android:hint="이름을 입력하시오."
+            android:textColor="#000000"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 성별은?"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:paddingTop="10dp">
+            <RadioButton
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="여자"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/selector_fe"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="남자"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/selector_male"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="#000000"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:textStyle="bold"
+        android:fontFamily="@font/font"
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="등록"
+        />
+
+</LinearLayout>

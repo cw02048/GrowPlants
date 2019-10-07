@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ryucaptain.growplants">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Grow\nPlants"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChoosePlant" />
+        <activity android:name=".SetTomato" />
+        <activity android:name=".SetCarrot" />
+        <activity android:name=".MainCarrot" />
+        <activity android:name=".MainTomato" />
+        <activity android:name=".InfoTomato" />
+        <activity android:name=".InfoCarrot" />
+        <activity android:name=".MainFragment" />
+        <activity android:name=".PlayTomato" />
+        <activity android:name=".PlayCarrot"></activity>
+    </application>
+
+</manifest>
